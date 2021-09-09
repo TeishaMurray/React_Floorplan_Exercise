@@ -1,0 +1,90 @@
+.App {
+  display: grid;
+}
+
+.div {
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 5px;
+}
+
+.floorplan {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "bdrm1 bdrm1 livingroom livingroom kitch"
+    "bdrm1 bdrm1 livingroom livingroom kitch"
+    "fullbath fullbath livingroom livingroom kitch"
+    "bdrm2 bdrm2 halfbath bdrm3 bdrm3"
+    "bdrm2 bdrm2 halfbath bdrm3 bdrm3"; 
+}
+
+.bdrm1 { grid-area: bdrm1; }
+.fullbath { grid-area: fullbath; }
+.bdrm2 { grid-area: bdrm2; }
+.livingroom { grid-area: livingroom; }
+.kitch { grid-area: kitch; }
+.halfbath { grid-area: halfbath; }
+.bdrm3 { grid-area: bdrm3; }
+
+#kitchen {
+  background-color: orange;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+}
+
+#kitchenlabel {
+  align-self: center;
+}
+
+#oven {
+  background-color: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-align: center; */
+  width: 10vw;
+  height: 5vh;  
+}
+
+#sink {
+  background-color: sienna;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-align: center; */
+  width: 10vw;
+  height: 5vh;
+}
+
+#living {
+  background-color: tan;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 40vw;
+  height: 60vh;
+}
+
+.bedroom {
+  background-color: darkblue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 40vw;
+  height: 40vh;
+}
+
+.bath {
+  background-color: green;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 20vw;
+  height: 40vh;
+}
